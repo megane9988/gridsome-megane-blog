@@ -12,7 +12,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'https://megane-blog.com', // required
+        baseUrl: 'https://megane-blog.com/', // required
         typeName: 'WordPress', // GraphQL schema name (Optional)
       }
     }
