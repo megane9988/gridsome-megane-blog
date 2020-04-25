@@ -1,9 +1,9 @@
 <template>
   <div class="layout">
+	<div class="site-logo">
+		<g-link to="/"><g-image src="~/assets/img/logo.svg"/></g-link>
+	</div>
     <header class="header">
-      <strong>
-        <g-link to="/">Gridsome</g-link>
-      </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
@@ -14,8 +14,27 @@
 </template>
 
 <style>
+
+@font-face {
+	font-family: "Noto Sans CJK JP";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot");
+	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
+	     url("../assets/fonts/NotoSansCJKjp-Regular.woff") format("woff"),
+	     url("../assets/fonts/NotoSansCJKjp-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Noto Sans CJK JP";
+	font-style:  bold;
+	font-weight: 700;
+	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot");
+	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
+	     url("../assets/fonts/NotoSansCJKjp-Bold.woff") format("woff"),
+	     url("../assets/fonts/NotoSansCJKjp-Bold.otf") format("opentype");
+}
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: "Noto Sans CJK JP", sans-serif;
 }
 
 img {
@@ -35,6 +54,14 @@ nav[role="navigation"] a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+.site-logo{
+	text-align: center;
+}
+.site-logo img{
+	width: 160px;
+	height: auto;
+	margin: 20px 0;
 }
 .header {
   display: flex;
