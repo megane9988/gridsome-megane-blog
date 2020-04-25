@@ -1,6 +1,23 @@
 <template>
   <Layout>
     <h1 v-html="$page.wordPressPost.title"/>
+    <social-sharing
+      :url="'https://gridsome.demodemo.link' + this.$route.path"
+      :title="$page.wordPressPost.title"
+      inline-template>
+      <ul class="social-share">
+          <li>
+            <network network="twitter">
+              <font-awesome-icon :icon="['fab', 'twitter']" />
+            </network>
+          </li>
+          <li>
+            <network network="facebook">
+              <font-awesome-icon :icon="['fab', 'facebook']" />
+            </network>
+          </li>
+      </ul>
+    </social-sharing>
     <img
       v-if="$page.wordPressPost.featuredMedia"
       :src="$page.wordPressPost.featuredMedia.sourceUrl"
@@ -139,6 +156,19 @@ export default {
   }
   ul.list li:last-child:after {
     content: '';
+  }
+  .social-share{
+      padding: 0;
+      margin: 5px 0;
+      display: flex;
+      justify-content: center;
+  }
+  .social-share li{
+      list-style: none;
+      padding: 0;
+      margin: 0 10px;
+      font-size: 40px;
+      cursor: pointer;
   }
   .RelatedPost{
       display: flex;
