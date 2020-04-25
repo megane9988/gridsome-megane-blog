@@ -1,7 +1,7 @@
 module.exports = {
   siteName: 'Gridsome',
   siteDescription: 'A WordPress starter for Gridsome',
-
+  icon: './src/assets/img/site-icon.png',
   templates: {
     WordPressCategory: '/category/:slug', // adds a route for the "category" post type (Optional)
     WordPressPost: '/:year/:month/:day/:id', // adds a route for the "post" post type (Optional)
@@ -16,5 +16,5 @@ module.exports = {
         typeName: 'WordPress', // GraphQL schema name (Optional)
       }
     }
-  ]
+  ],
 }
