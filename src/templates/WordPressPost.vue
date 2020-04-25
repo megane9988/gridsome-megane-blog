@@ -49,15 +49,52 @@ query WordPressPost ($id: ID!) {
       title
       path
     }
+    headTags{
+      attributes{
+        property
+        content
+    }
+}
   }
 }
 </page-query>
 
 <script>
 export default {
+
   metaInfo () {
     return {
-      title: this.$page.wordPressPost.title
+	  title: this.$page.wordPressPost.title,
+      meta: [
+        {
+          property: 'og:image',
+          content: this.$page.wordPressPost.headTags[17].attributes.content
+        },
+        {
+          property: 'og:site_name',
+          content: this.$page.wordPressPost.headTags[8].attributes.content
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:url',
+          content: 'https://gridsome.demodemo.link' + this.$route.path
+        },
+        {
+          property: 'og:title',
+          content: this.$page.wordPressPost.title
+        },
+        {
+          property: 'og:description',
+          content: this.$page.wordPressPost.headTags[6].attributes.content
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      ]
     }
   }
 }

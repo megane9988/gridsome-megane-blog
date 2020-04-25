@@ -24,7 +24,7 @@ query Home ($page: Int) {
         excerpt
         headTags{
           attributes{
-            property,
+            property
             content
           }
         }
