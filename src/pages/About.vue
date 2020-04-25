@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <p>こちらは<a href="https://megane-blog.com">メガネブログ</a>を元に、Gridsomeを利用して静的に書き出したサイトになります。詳しくは<a href="https://github.com/megane9988/gridsome-megane-blog">Github</a>をご覧ください。</p>
   </Layout>
 </template>
 

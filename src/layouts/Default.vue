@@ -35,25 +35,8 @@
 </template>
 
 <style>
-
-@font-face {
-	font-family: "Noto Sans CJK JP";
-	font-style: normal;
-	font-weight: 400;
-	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot");
-	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
-	     url("../assets/fonts/NotoSansCJKjp-Regular.otf") format("opentype");
-}
-@font-face {
-	font-family: "Noto Sans CJK JP";
-	font-style:  bold;
-	font-weight: 700;
-	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot");
-	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
-	     url("../assets/fonts/NotoSansCJKjp-Bold.otf") format("opentype");
-}
 body {
-  font-family: "Noto Sans CJK JP", sans-serif;
+  font-family: sans-serif;
 }
 
 img {
