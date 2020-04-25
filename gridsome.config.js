@@ -4,7 +4,7 @@ module.exports = {
   icon: './src/assets/img/site-icon.png',
   templates: {
     WordPressCategory: '/category/:slug', // adds a route for the "category" post type (Optional)
-    WordPressPost: '/:year/:month/:day/:id', // adds a route for the "post" post type (Optional)
+    WordPressPost: '/article/:id', // adds a route for the "post" post type (Optional)
     WordPressPostTag: '/tag/:slug' // adds a route for the "post_tag" post type (Optional)
   },
 

@@ -8,6 +8,18 @@
       :alt="$page.wordPressPost.featuredMedia.altText"
     />
     <div v-html="$page.wordPressPost.content"/>
+
+    <template v-if="$page.wordPressPost.jetpackRelatedPosts.length">
+      <h4>関連記事</h4>
+      <ul class="RelatedPost">
+        <li v-for="RelatedPost in $page.wordPressPost.jetpackRelatedPosts" :key="RelatedPost.id" >
+            <g-link :to="'/article/' + RelatedPost.id">
+                <g-image :src="RelatedPost.img.src" />
+                <br>{{ RelatedPost.title }}
+            </g-link>
+        </li>
+      </ul>
+    </template>
     <template v-if="$page.wordPressPost.categories.length">
       <h4>Posted in</h4>
       <ul class="list categories">
@@ -53,8 +65,16 @@ query WordPressPost ($id: ID!) {
       attributes{
         property
         content
+      }
     }
-}
+    jetpackRelatedPosts{
+      id
+      title
+      url
+      img{
+        src
+      }
+    }
   }
 }
 </page-query>
@@ -64,7 +84,7 @@ export default {
 
   metaInfo () {
     return {
-	  title: this.$page.wordPressPost.title,
+      title: this.$page.wordPressPost.title,
       meta: [
         {
           property: 'og:image',
@@ -119,5 +139,17 @@ export default {
   }
   ul.list li:last-child:after {
     content: '';
+  }
+  .RelatedPost{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+  }
+  .RelatedPost li{
+      box-sizing: border-box;
+      width: 50%;
+      list-style: none;
+      padding: 4px;
   }
 </style>
