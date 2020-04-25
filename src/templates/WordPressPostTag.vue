@@ -26,7 +26,8 @@ query WordPressPostTag ($id: ID!, $page: Int) {
             title
             path
             excerpt
-        	}
+            jetpackFeaturedMediaUrl
+          }
         }
       }
     }
