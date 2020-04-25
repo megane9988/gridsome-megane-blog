@@ -22,6 +22,12 @@ query Home ($page: Int) {
         title
         path
         excerpt
+        headTags{
+          attributes{
+            property,
+            content
+          }
+        }
       }
     }
   }
