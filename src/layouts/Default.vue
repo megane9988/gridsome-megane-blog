@@ -42,7 +42,6 @@
 	font-weight: 400;
 	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot");
 	src: url("../assets/fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
-	     url("../assets/fonts/NotoSansCJKjp-Regular.woff") format("woff"),
 	     url("../assets/fonts/NotoSansCJKjp-Regular.otf") format("opentype");
 }
 @font-face {
@@ -51,7 +50,6 @@
 	font-weight: 700;
 	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot");
 	src: url("../assets/fonts/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
-	     url("../assets/fonts/NotoSansCJKjp-Bold.woff") format("woff"),
 	     url("../assets/fonts/NotoSansCJKjp-Bold.otf") format("opentype");
 }
 body {
