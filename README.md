@@ -10,7 +10,11 @@
 - Github
   - [https://github.com/megane9988/gridsome-megane-blog](https://github.com/megane9988/gridsome-megane-blog)
   - リポジトリとして利用
-- WordPress starter for Gridsome
+- Gridsome
+    - [https://gridsome.org/](https://gridsome.org/)
+    - Vue.jsを利用したスタティックサイトジェネレーター
+    - WordPressのJsonファイルを元に静的なサイトを構築する
+    - 今回は雛形として後述のWordPress starter for Gridsomeを利用
   - 後述を参照
 - Netlify
   - [https://www.netlify.com/](https://www.netlify.com/)
@@ -18,7 +22,12 @@
 - 結果として出力されるURL
   - [https://gridsome.demodemo.link/](https://gridsome.demodemo.link/)
 
-# WordPress starter for Gridsome
+# プロジェクトの進め方
+- Githubのissueベースで作業を進める
+- [プロジェクトボード](https://github.com/megane9988/gridsome-megane-blog/projects/1)を利用する
+
+
+# WordPress starter for Gridsome について
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gridsome/gridsome-starter-wordpress)
 
