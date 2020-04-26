@@ -1,6 +1,15 @@
 <template>
   <Layout>
     <h1 v-html="$page.wordPressPost.title"/>
+    <template v-if="$page.wordPressPost.tags.length">
+	  <div class="entry-header">
+		<ul class="tag-list">
+			<li v-for="tag in $page.wordPressPost.tags" :key="tag.id" >
+			<g-link :to="tag.path">{{ tag.title }}</g-link>
+			</li>
+		</ul>
+	  </div>
+    </template>
     <social-sharing
       :url="'https://gridsome.demodemo.link' + this.$route.path"
       :title="$page.wordPressPost.title"
@@ -42,14 +51,6 @@
       <ul class="list categories">
         <li v-for="category in $page.wordPressPost.categories" :key="category.id" >
           <g-link :to="category.path">{{ category.title }}</g-link>
-        </li>
-      </ul>
-    </template>
-    <template v-if="$page.wordPressPost.tags.length">
-      <h4>Tags</h4>
-      <ul class="list tags">
-        <li v-for="tag in $page.wordPressPost.tags" :key="tag.id" >
-          <g-link :to="tag.path">{{ tag.title }}</g-link>
         </li>
       </ul>
     </template>
@@ -180,6 +181,10 @@ export default {
       box-sizing: border-box;
       width: 50%;
       list-style: none;
-      padding: 4px;
+	  padding: 4px;
+	  line-height: 1;
+  }
+  .RelatedPost li a{
+	  font-size:14px;
   }
 </style>

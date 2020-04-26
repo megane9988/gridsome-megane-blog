@@ -31,6 +31,11 @@
       </nav>
     </header>
     <slot/>
+	<footer class="site-footer">
+		<div class="container">
+			<p class="copyright">megane9988</p>
+		</div>
+	</footer>
     <go-top
 	:size="50"
 	bg-color="#000"
