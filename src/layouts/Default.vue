@@ -36,10 +36,12 @@
 			<p class="copyright">megane9988</p>
 		</div>
 	</footer>
+	<ClientOnly>
     <go-top
 	:size="50"
 	bg-color="#000"
 	:radius="8"></go-top>
+	</ClientOnly>
   </div>
 </template>
 
