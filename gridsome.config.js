@@ -15,6 +15,14 @@ module.exports = {
         baseUrl: 'https://megane-blog.com/', // required
         typeName: 'WordPress', // GraphQL schema name (Optional)
       }
+    },
+    {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-WW7FMML',
+        enabled: true,
+        debug: true
+      }
     }
   ],
 }
