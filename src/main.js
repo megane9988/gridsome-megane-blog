@@ -7,18 +7,16 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-//上に戻るボタン
-import GoTop from '@inotom/vue-go-top';
+//スムーズスクロール
+import VueScrollTo from 'vue-scrollto'
 
 export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(SocialSharing)
+  Vue.use(VueScrollTo)
   library.add(faFacebook)
   library.add(faTwitter)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
-  if (process.isClient) {
-    Vue.component('GoTop', GoTop)
-  }
 
   // Add a meta tag
   head.meta.push({
@@ -26,4 +24,5 @@ export default function (Vue, { head }) {
     content: 'noindex , nofollow'
   })
 }
+
 import '~/assets/styles.scss'
