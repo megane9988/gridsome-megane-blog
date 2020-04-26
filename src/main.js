@@ -16,7 +16,9 @@ export default function (Vue, { head }) {
   library.add(faFacebook)
   library.add(faTwitter)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
-  Vue.component('GoTop', GoTop)
+  if (process.isClient) {
+    Vue.component('GoTop', GoTop)
+  }
 
   // Add a meta tag
   head.meta.push({
@@ -24,5 +26,4 @@ export default function (Vue, { head }) {
     content: 'noindex , nofollow'
   })
 }
-
 import '~/assets/styles.scss'
