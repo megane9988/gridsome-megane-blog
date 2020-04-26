@@ -31,6 +31,10 @@
       </nav>
     </header>
     <slot/>
+    <go-top
+	:size="50"
+	bg-color="#000"
+	:radius="8"></go-top>
   </div>
 </template>
 

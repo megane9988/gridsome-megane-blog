@@ -7,12 +7,16 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+//上に戻るボタン
+import GoTop from '@inotom/vue-go-top';
+
 export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(SocialSharing)
   library.add(faFacebook)
   library.add(faTwitter)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
+  Vue.component('GoTop', GoTop)
 
   // Add a meta tag
   head.meta.push({
