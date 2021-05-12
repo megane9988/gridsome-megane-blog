@@ -15,7 +15,7 @@
     "@gridsome/source-wordpress": "^0.5.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtm": "^0.1.1",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-scrollto": "^2.18.1",
     "vue-social-sharing": "^2.4.7"
