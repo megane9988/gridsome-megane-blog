@@ -21,7 +21,7 @@
     "vue-social-sharing": "^2.4.7"
   },
   "devDependencies": {
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   },
   "rules": {
